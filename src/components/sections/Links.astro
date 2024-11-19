@@ -1,0 +1,63 @@
+---
+import Section from '../Section.astro';
+import { profiles } from '@info';
+import { Icon } from 'astro-icon/components';
+import Column from 'fulldev-ui/components/Column.astro';
+import Button from 'fulldev-ui/components/Button.astro';
+---
+
+<Section>
+  <Column class='custom-column'>
+    {
+      profiles.map(({ network, name, url }) => {
+        return (
+          <Button
+            color='brand'
+            href={url}
+            target='_blank'
+            rel='noopener noreferrer'
+            class='custom-button'
+          >
+            {' '}
+            <Icon name={`socials/${name}`} class='button-icon' />
+            <span class='text-wrapper'>{network}</span>
+          </Button>
+        );
+      })
+    }
+  </Column>
+</Section>
+
+<style>
+  .custom-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .custom-button {
+    width: 350px; /* Limit the maximum width of the button */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Center the text */
+    position: relative; /* Allow positioning of the icon */
+    padding: 0.5rem 1rem; /* Add padding for better appearance */
+  }
+
+  .button-icon {
+    position: absolute; /* Place the icon relative to the button */
+    left: 1rem; /* Align the icon to the left */
+    width: 24px; /* Fixed width for uniform icons */
+    height: 24px; /* Fixed height for uniform icons */
+    flex-shrink: 0; /* Prevent icon from shrinking */
+  }
+
+  .text-wrapper {
+    text-align: center; /* Center-align the text */
+    flex: 1; /* Ensure the text takes up remaining space */
+  }
+
+  @media (width <= 700px) {
+  }
+</style>

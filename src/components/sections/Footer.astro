@@ -1,0 +1,18 @@
+---
+import Label from 'fulldev-ui/components/Label.astro';
+const today = new Date();
+---
+
+<footer>
+  <Label>
+    &copy; {today.getFullYear()}
+  </Label>
+</footer>
+<style>
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+</style>

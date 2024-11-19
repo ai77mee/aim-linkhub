@@ -1,0 +1,48 @@
+---
+import Section from '@/components/Section.astro';
+import Heading from 'fulldev-ui/components/Heading.astro';
+import Text from 'fulldev-ui/components/Text.astro';
+import { Image } from 'astro:assets';
+import { basics } from '@info';
+import pfp from '@/assets/pfp.webp';
+const { name, label, summary } = basics;
+---
+
+<Section>
+  <div class='container'>
+    <Image width={128} height={128} src={pfp} alt='Profile picture' />
+    <div class='info'>
+      <Heading contrast={false} color='brand'>{name}</Heading>
+      <Heading level={5} contrast={false} color='base'>{summary}</Heading>
+      <Text size='sm' color='brand'>{label}</Text>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 350px; /* Limit the maximum width of the text */
+    text-align: center; /* Center the text within the max width */
+  }
+
+  img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  @media (max-width: 700px) {
+  }
+</style>

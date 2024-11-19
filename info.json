@@ -1,0 +1,38 @@
+{
+  "basics": {
+    "name": "aimee",
+    "label": "Currently reading AdaShima light novels",
+    "summary": "she/her • 30 years old • Mexico"
+  },
+  "profiles": [{
+      "name": "anilist",
+      "network":"AniList",
+      "username": "aimichi",
+      "url": "https://anilist.co/user/aimichi/"
+    },
+	{
+      "name": "mal",
+      "network":"MyAnimeList",
+      "username": "bouipowi",
+      "url": "https://myanimelist.net/profile/bouipowi"
+    },
+{
+      "name": "lastfm",
+      "network":"last.fm",
+      "username": "aiimeee",
+      "url": "https://www.last.fm/user/aiimeee"
+    },
+    {
+      "name": "bsky",
+      "network":"Bluesky",
+      "username": "eaime",
+      "url": "https://bsky.app/profile/eaime.bsky.social"
+    },
+        {
+      "name": "spotify",
+      "network":"Spotify",
+      "username": "aimee",
+      "url": "https://open.spotify.com/user/x4wrss8rwfaq92k0v62x7cw5t?si=cce3a87189e14a29"
+    }
+]
+  }

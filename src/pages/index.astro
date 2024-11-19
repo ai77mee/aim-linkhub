@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Hero from '@/components/sections/Hero.astro';
+import Links from '@/components/sections/Links.astro';
+import Footer from '@/components/sections/Footer.astro';
+---
+
+<Layout title='Link Hub'>
+  <main>
+    <Hero />
+    <Links />
+    <Footer />
+  </main>
+</Layout>
+
+<style>
+  main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%;
+  }
+
+  @media (width <= 700px) {
+    main {
+      padding: 2rem;
+    }
+  }
+</style>
