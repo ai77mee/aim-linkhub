@@ -7,14 +7,14 @@
   "profiles": [{
       "name": "anilist",
       "network":"AniList",
-      "username": "aimichi",
-      "url": "https://anilist.co/user/aimichi/"
+      "username": "ai77ee",
+      "url": "https://anilist.co/user/ai77ee/"
     },
 	{
       "name": "mal",
       "network":"MyAnimeList",
-      "username": "bouipowi",
-      "url": "https://myanimelist.net/profile/bouipowi"
+      "username": "ai77ee",
+      "url": "https://myanimelist.net/profile/ai77ee"
     },
 {
       "name": "lastfm",
